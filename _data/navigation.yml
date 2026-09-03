@@ -5,14 +5,14 @@ pages:
   url: /index_layout2
 # - name: Home (Layout 2)
 #   url: /index_layout2
-- name: Projects
-  url: /showcase
-- name: Collaborations
-  url: /blog  
+# - name: Projects
+#   url: /showcase
+# - name: Collaborations
+#   url: /blog  
 - name: Publications
-  url: /publications
-- name: Talks
-  url: /publications
+  url: /showcase
+# - name: Talks
+#   url: /publications
 # - name: Footprint
 #   url: /blog
 # - name: Showcase
