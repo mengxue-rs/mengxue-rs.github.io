@@ -53,11 +53,15 @@ education:
   date: Sep. 2014 - Jul. 2018
   
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.jpg
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: Hybrid Probabilistic Deep Learning for Drought Monitoring
+  logo: /assets/images/badges/UV_logo.jpg
+  position: Leader
+  date: Sep. 2021 - Jul. 2026
+- name: EU Horizon project XAIDA
+  logo: /assets/images/badges/XAIDA_logo.png
+  position: Researcher
+  date: Sep. 2022 - Jul. 2025
 
 awards:
 - name: CSC Scholarship — Competitive Doctoral Fellowship
