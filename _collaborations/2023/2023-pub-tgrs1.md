@@ -1,5 +1,5 @@
 ---
-title:          "The AIDE toolbox: Artificial intelligence for disentangling extreme events [software and data sets]"
+title:          "DSR-GCN: Differentiated-scale restricted graph convolutional network for few-shot hyperspectral image classification"
 date:           2023-01-01
 selected:       true
 pub:            "IEEE Transactions on Geoscience and Remote Sensing"
