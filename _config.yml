@@ -37,7 +37,8 @@ plugins:
 collections:
   - publications
   - news
-  - collaborations
+  - showcase
   - posts
+  - collaborations
   - talks
   - projects
