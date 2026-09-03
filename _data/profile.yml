@@ -28,8 +28,9 @@ short_bio: >-
    <b>Hi there, I'm Mengxue Zhang.</b>
   </p>
   <p>
-    I am an Earth-system AI researcher, working at the intersection of <b>physics-aware deep learning, probabilistic modeling, and uncertainty quantification</b>. I hold a Ph.D. in Remote Sensing from the University of Valencia, under the supervision of Prof. Gustau Camps-Valls and Miguel Ángel Fernández-Torres,
-    where I developed hybrid AI methods for uncertainty-aware drought modeling. My research integrates physical knowledge and probabilistic inference into deep learning to improve <b>model generalization, predictive reliability, and physical consistency</b>.
+    I am an Earth-system AI researcher, working at the intersection of <b>physics-aware deep learning, probabilistic modeling, and uncertainty quantification</b>. I hold a Ph.D. in Remote Sensing from the University of Valencia, under the supervision of 
+    <a href="https://www.uv.es/gcamps/" target="_blank">Prof. Gustau Camps-Valls</a> and   <a href="https://www.tsc.uc3m.es/en/profile.php?uid=matorres" target="_blank">Miguel Ángel Fernández-Torres</a>, where I developed hybrid AI methods for uncertainty-aware 
+    drought modeling. My research integrates physical knowledge and probabilistic inference into deep learning to improve <b>model generalization, predictive reliability, and physical consistency</b>.
   </p>
   <p>
     My future research aims to develop <b>uncertainty-aware hybrid Earth-system models</b> for robust prediction of climate extremes under changing climate conditions.
