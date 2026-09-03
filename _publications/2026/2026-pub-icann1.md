@@ -1,6 +1,6 @@
 ---
 title:          "The Risks of Imperfect Knowledge: Reliability Trade-Offs in Physics-Aware Neural Networks for Climate Projections"
-date:           2026
+date:           2026-01-01
 selected:       true
 pub:            "International Conference on Artificial Neural Networks (ICANN)"
 pub_date:       "2026"
