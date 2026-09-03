@@ -54,13 +54,13 @@ education:
   
 
 experience:
-- name: Hybrid Probabilistic Deep Learning for Drought Monitoring
+- name: Hybrid Probabilistic Deep Learning for Drought Monitoring 
   logo: /assets/images/badges/UV_logo.jpg
-  position: Leader
+  position: Principal Investigator (Dissertation)
   date: Sep. 2021 - Jul. 2026
 - name: EU Horizon project XAIDA
   logo: /assets/images/badges/XAIDA_logo.png
-  position: Researcher
+  position: Contributors (D3.2 & D3.4)
   date: Sep. 2022 - Jul. 2025
 
 awards:
