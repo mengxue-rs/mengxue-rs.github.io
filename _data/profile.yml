@@ -5,7 +5,7 @@ navbar_name: "Zhang Mengxue"
 positions:
 - name: Ph.D. Researcher
 - name: Universitat de València, Image Processing Laboratory, Spain
-  logo: /assets/images/badges/UV_logo.png  # Logo is optional
+  logo: /assets/images/badges/UV_logo.jpg  # Logo is optional
 
 
 email: "mx.zhang.rs@gmail.com"
