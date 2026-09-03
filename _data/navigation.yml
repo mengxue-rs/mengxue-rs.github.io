@@ -7,8 +7,8 @@ pages:
 #   url: /index_layout2
 # - name: Projects
 #   url: /showcase
-# - name: Collaborations
-#   url: /blog  
+- name: Collaborations
+  url: /collaborations  
 - name: Publications
   url: /publications
 # - name: Talks
