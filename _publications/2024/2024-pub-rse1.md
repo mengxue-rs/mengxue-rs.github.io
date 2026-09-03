@@ -1,6 +1,6 @@
 ---
 title:          "Domain knowledge-driven variational recurrent networks for drought monitoring"
-date:           2024
+date:           2024-01-01
 selected:       true
 pub:            "Remote Sensing of Environment"
 pub_date:       "2024"
