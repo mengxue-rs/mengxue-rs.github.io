@@ -16,7 +16,7 @@ date: 2025-09-15 00:01:00 +0800
         • Uncertainty framework identifies variability sources and benefits the decision-making. 
     </p>
     <hr />
-    <div class="text-muted small d-flex justify-content-start gap-11">
+    <div class="text-muted small d-flex justify-content-start gap-12">
         <span><i class="fas fa-map-marker-alt me-1"></i> Jena, Germany</span>
         <span><i class="far fa-calendar-alt me-1"></i> Sep. 2025</span>
     </div>
