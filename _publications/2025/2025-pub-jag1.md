@@ -1,6 +1,6 @@
 ---
 title:          "Calibration and uncertainty quantification for deep learning-based drought detection"
-date:           2025
+date:           2025-01-01
 selected:       true
 pub:            "International Journal of Applied Earth Observation and Geoinformation"
 pub_date:       "2025"
