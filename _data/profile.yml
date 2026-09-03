@@ -38,24 +38,24 @@ portrait_url: /assets/images/photos/portrait.jpg
 
 education:
 - name: University of Valencia
-  logo: /assets/images/badges/UV_logo.png
+  logo: /assets/images/badges/UV_logo.jpg
   position: >- 
     Department of Earth Physics and Thermodynamics. <br/>
     Ph.D. in Remote Sensing
   date: Sep. 2021 - July 2026
 - name: Hohai University
-  logo: /assets/images/badges/HHU_logo.png
+  logo: /assets/images/badges/HHU_logo.jpg
   position: M.E. in Geographic Information Engineering (Excellent)
   date: Sep. 2018 - Jul. 2021
 - name: Hohai University
-  logo: /assets/images/badges/HHU_logo.png
+  logo: /assets/images/badges/HHU_logo.jpg
   position: B.S. in Geomatics Engineering (Excellent)
   date: Sep. 2014 - Jul. 2018
   
 
 # experience:
 # - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
+#   logo: /assets/images/badges/PKU_red.jpg
 #   position: Research Intern
 #   date: Sep. 2019 - Jul. 2021
 
