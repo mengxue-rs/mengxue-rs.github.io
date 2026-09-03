@@ -7,9 +7,9 @@ pages:
 #   url: /index_layout2
 - name: Experience
   url: /showcase
-- name: Publications
+- name: Publication
   url: /publications
-- name: Communications
+- name: Communication
   url: /blog
 - name: Footprint
   url: /blog
