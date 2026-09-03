@@ -9,8 +9,8 @@ pages:
 #   url: /showcase
 # - name: Collaborations
 #   url: /blog  
-# - name: Publications
-#   url: /publications
+- name: Publications
+  url: /publications
 # - name: Talks
 #   url: /publications
 # - name: Footprint
