@@ -58,10 +58,10 @@ experience:
   logo: /assets/images/badges/UV_logo.jpg
   position: Principal Investigator (Dissertation)
   date: Sep. 2021 - Jul. 2026
-- name: EU Horizon project XAIDA
-  logo: /assets/images/badges/XAIDA_logo.png
-  position: Contributors (D3.2 & D3.4)
-  date: Sep. 2022 - Jul. 2025
+# - name: EU Horizon project XAIDA
+#   logo: /assets/images/badges/XAIDA_logo.png
+#   position: Contributors (D3.2 & D3.4)
+#   date: Sep. 2022 - Jul. 2025
 
 awards:
 - name: CSC Scholarship — Competitive Doctoral Fellowship
