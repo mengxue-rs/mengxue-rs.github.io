@@ -4,7 +4,7 @@ navbar_name: "Mengxue Zhang"
 
 positions:
 - name: Ph.D. Researcher
-- name: Universitat de València, Image Processing Laboratory, Spain
+- name: Universitat de València,  Image Processing Laboratory,  Spain
   logo: /assets/images/badges/UV_logo.jpg  # Logo is optional
 
 
@@ -25,8 +25,8 @@ orcid: 0000-0002-8587-4334
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Earth-system AI researcher, working at the intersection of *physics-aware deep learning, probabilistic modeling, and uncertainty quantification*. I hold a Ph.D. in Remote Sensing from the University of Valencia,
-    where I developed hybrid AI methods for uncertainty-aware drought modeling. My research integrates physics and probabilistic inference into deep learning to improve *model generalization, predictive reliability, and physical consistency*.
+    Earth-system AI researcher, working at the intersection of <b>physics-aware deep learning, probabilistic modeling, and uncertainty quantification<b>. I hold a Ph.D. in Remote Sensing from the University of Valencia,
+    where I developed hybrid AI methods for uncertainty-aware drought modeling. My research integrates physics and probabilistic inference into deep learning to improve <b>model generalization, predictive reliability, and physical consistency<b>.
   </p>
   <p>
     My future research aims to develop *uncertainty-aware hybrid Earth-system models* for robust prediction of climate extremes under changing climate conditions.
