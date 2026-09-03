@@ -14,7 +14,7 @@ authors:
 - Esther Rodrigo-Bonet
 - Gustau Camps-Valls
 links:
-  Paper: /assets/images/papers/ICANN2026_Poster.pdf
+  Paper: /assets/images/papers/ICANN2026_Paper.pdf
   # Code: https://github.com/luost26/academic-homepage
   Poster: /assets/images/posters/ICANN2026_Poster.pdf
 ---
