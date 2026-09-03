@@ -7,7 +7,7 @@ date: 2025-09-15 00:01:00 +0800
     <h5>ELLIS Summer School: AI for Earth and Climate Sciences</h5>
     <hr />
     <p>
-        Calibration and uncertainty quantification for deep learning-based drought detection
+        <a href="https://www.sciencedirect.com/science/article/pii/S1569843225002109" target="_blank">Calibration and uncertainty quantification for deep learning-based drought detection</a>
     </p>
     <p>
         • A parametric calibration algorithm is applied for more reliable DL drought detection. <br>
