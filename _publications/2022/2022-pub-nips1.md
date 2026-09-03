@@ -12,5 +12,5 @@ authors:
 - Miguel-Ángel Fernández-Torres
 - Gustau Camps-Valls
 links:
-  Websiite: https://www.climatechange.ai/papers/neurips2022/51
+  Website: https://www.climatechange.ai/papers/neurips2022/51
 ---
