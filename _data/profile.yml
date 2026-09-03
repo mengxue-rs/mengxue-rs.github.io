@@ -1,6 +1,6 @@
 primary_name: "Mengxue Zhang"
 secondary_name: ""
-navbar_name: "" # Mengxue Zhang (mx.zhang.rs@gmail.com)
+navbar_name: '<span style="color: gray;">Mengxue Zhang</span>' # Mengxue Zhang (mx.zhang.rs@gmail.com)
 
 positions:
 - name: Ph.D. Researcher
