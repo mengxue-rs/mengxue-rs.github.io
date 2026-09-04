@@ -1,0 +1,81 @@
+---
+layout: blog_post
+title: 'Extreme Event Detection: Hybrid AI → Generalization'
+date: 2023-07-01
+tags:
+  - Drought Monitoring
+  - Deep Learning
+  - Domain Knowledge
+---
+
+# 1.1 Background
+
+Recognizing real-world low-likelihood high-impact drought events is exceptionally significant. 
+
+Historically, the impacts of extreme droughts have spanned across ages, triggering devastating consequences such as the collapse of ancient civilizations, forced human migrations, and massive loss of life. 
+
+The severity of these events is further amplified by their multifaceted and dynamic nature, as they cascade through meteorological, agricultural, hydrological, and socioeconomic systems.
+
+# 1.2 Challenges
+
+Detecting extreme drought events comes with significant difficulties:
+* **Data Imbalance**: Drought events are highly rare in space and time.
+* **False Alarms**: Traditional drought indices (e.g., sc-PDSI) may not adequately distinguish true drought events from internal climate variability.
+
+------
+
+# 1.3 Methodology & Architecture
+
+We proposed solution utilizes a **Domain Knowledge-Driven Variational Recurrent Network (DK-VRN)** .
+
+### Core Components
+1. **Encoders** ($Q_\theta$ and $Q_\kappa$): Encodes climate variables ($x_0$, such as Total Precipitation and 2-meter Temperature) and drought indices ($x_1$, such as Multi-scalar SPEI).
+2. **Reparameterization**: Generates latent variables $z = \mu + \sigma \times \epsilon$ .
+3. **Decoders** ($P_\xi$ and $P_\pi$): Reconstructs the Essential Climate Variables (ECVs) and predicts drought labels.
+
+> The architecture harnesses domain knowledge as latent prior distributions to align posterior distributions with physical realities.
+
+### Core Loss Function
+
+The overall loss function combines several components to ensure accuracy and physical consistency:
+- `CLF-Loss`: Classification Loss
+- `REC-Loss`: Reconstruction Loss
+- `KL-Loss`: Kullback-Leibler Divergence Loss
+
+------
+
+# 1.4 Experimental Setup & Quantitative Results
+
+The models were evaluated on diverse regions including Afghanistan, Bosnia, Croatia, Hungary, Italy, Lithuania, Mauritania, Moldova, Russia, Syria, and Tajikistan.
+
+### Event-based ROC-AUC (%) for Different Models
+
+| Model | Afghanistan | Italy | Moldova | Russia |
+| --- | --- | --- | --- | --- |
+| **SPEI-6** | 75.8 | 69.6 | 97.4 | 78.1 |
+| **LSTM** | 76.3 ± 4.3 | 75.7 ± 3.4 | 96.5 ± 1.2 | 75.6 ± 4.1 |
+| **VLSTM** | 74.2 ± 3.1 | 68.9 ± 7.5 | 95.3 ± 2.3 | 80.1 ± 1.5 |
+| **DK-VRN** | **79.7 ± 0.5** | **84.3 ± 0.6** | **92.5 ± 0.7** | **89.4 ± 0.2** |
+
+*Table data sourced from the publications.*
+
+### Ablation Study
+
+An ablation study on the use of different loss terms demonstrated that incorporating domain knowledge directly improves the ROC-AUC performance:
+
+| CLF-Loss | RCE-Loss | KL-Loss | ROC-AUC |
+| :---: | :---: | :---: | :---: |
+| X | standard | - | 74.8 ± 3.5 |
+| X | standard | standard | 79.6 ± 0.9 |
+| X | domain knowledge | - | 80.2 ± 3.2 |
+| X | domain knowledge | domain knowledge | **84.3 ± 0.1** |
+
+------
+
+# 1.5 Summary
+
+* Implemented a **hybrid deep learning model** for drought detection.
+* Successfully harnessed **domain knowledge** as latent prior distributions.
+* Achieved **stronger generalization** across various drought events.
+
+***
