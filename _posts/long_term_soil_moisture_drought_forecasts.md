@@ -1,0 +1,90 @@
+---
+layout: blog_post
+title: 'Long-term Soil Moisture Forecasting: Land–atmosphere Process → Physical consistency'
+date: 2026-07-01
+tags:
+  - Drought Forecasting
+  - Soil Moisture
+  - Deep Learning
+  - Physical Regularization
+---
+
+# 1.1 Background
+Soil moisture (SM) droughts pose significant threats to water resources, agricultural productivity, and food security. 
+
+To mitigate these impacts, reliable long-term drought forecasts are essential.
+
+The inherent complexity of land-atmosphere interactions, coupled with climate variability, may impact the consistency of data-driven SM drought predictions and their interpretations
+
+# 1.2 Challenges
+
+Forecasting soil moisture over the long term is exceptionally complex due to physical and climatic factors:
+* **Nonlinear Dynamics**: At the local scale, soil moisture evolves through complicated interactions involving evapotranspiration (ET) anomalies, runoff anomalies, and variations between wet and dry regions.
+* **Internal Variability**: At a large-scale, soil moisture dynamics are heavily modulated by internal climate variability, such as atmospheric high/low-pressure systems and moisture transport (Rossby Wave Sources).
+
+------
+
+# 1.3 The Proposed Framework
+
+The research introduces a comprehensive deep learning framework centered around the **MaskTRN** architecture, augmented by two key components for physical and statistical robustness:
+
+### 1. MaskTRN Architecture
+The core model is an encoder-decoder architecture designed to handle nonlinear processes. The Encoder utilizes Multi-Head Attention and Masking layers, while the Decoder employs LSTM layers to produce the Soil Moisture Anomaly (SMA) prediction ($\hat{y} = SMA$) from atmospheric and satellite inputs ($x = [x_{Atmos.}, x_{Sat.}]$).
+
+### 2. Data-aware Uncertainty (DaU)
+To address climate variability, the model estimates the future data distribution (Martingale posterior). For deep learning models, this estimation is realized using well-defined data augmentation (fixed-$\lambda$ Mixup) and deep ensembles to capture predictive uncertainty effectively.
+
+### 3. Physics-aware Regularization (PaR)
+Incorporating the moisture budget increases the model's physical consistency. The physical loss regularizes the network by penalizing deviations from expected hydrological balances (Evaporation, Runoff, Ground water), formulated as $\mathcal{L}_{\Phi} = ||V(t) - \tilde{V}(t)||^2$.
+
+------
+
+# 1.4 Experimental Setup
+
+* **Datasets**: Incorporates Atmospheric features (TP, T2M, SSRD, WS, etc.) and Land-surface variables (LAI, Albedo, LC, etc.).
+* **Target Variables**: LSM-based SMA and Satellite-derived SMA at a $0.25^\circ$ spatial resolution.
+* **Time Span**: Monthly data from 1981-2008 (Training) and 2009-2018 (Test).
+* **Evaluation Metrics**: 
+  - *Generalization Error*: RMSE, MAE, and $R^2$.
+  - *Calibration Error*: RMSCE, MACE, and MA.
+  - *Consistency Error*: Pearson Correlation Coefficient ($\rho$), Nash-Sutcliffe Efficiency.
+
+------
+
+# 1.5 Quantitative Results
+
+The proposed model (MaskTRN + DaU + PaR) demonstrated superior performance in capturing soil moisture anomalies compared to standard machine learning and deep learning baselines.
+
+### Performance on SMA Predictions
+
+| Model | LSM-based $R^2(\uparrow)$ | LSM-based MA(↓) | LSM-based $\rho(\uparrow)$ | Satellite $R^2(\uparrow)$ | Satellite MA(↓) | Satellite $\rho(\uparrow)$ |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **RF** | 32.78 | 48.35 | 55.98 | 33.61 | 48.01 | 60.10 |
+| **LSTM** | 64.67 | 27.51 | 81.15 | 53.13 | 33.71 | 74.13 |
+| **Transformer**| 65.89 | 26.94 | 79.90 | 54.66 | 30.02 | 73.92 |
+| **Proposed** | **72.21** | **8.71** | **83.67** | **59.38** | **4.30** | **76.44** |
+
+*Table data sourced from the publication.*
+
+### Ablation on Robustness Strategies (LSM-based)
+Integrating both DaU and PaR significantly improved generalizability and consistency compared to using Deep Ensembles (DE) or Mixup alone:
+
+| Strategy | $R^2(\uparrow)$ | MA(↓) | $\rho(\uparrow)$ |
+| :--- | :---: | :---: | :---: |
+| **Multi-loss** | 69.65 | 32.45 | 81.20 |
+| **Mixup** | 69.29 | 31.73 | 82.06 |
+| **DE** | 71.88 | 9.29 | 83.59 |
+| **Mixup MP** | 71.08 | 9.80 | 83.41 |
+| **Proposed** | **72.21** | **8.71** | **83.67** |
+
+*Table data sourced from.*
+
+------
+
+# 1.6 Summary
+
+* Data-aware Uncertainty (DaU) successfully **improves model generalization** to future, unseen climate conditions.
+* Physics-aware Regularization (PaR) strictly **enforces consistency** with local hydrological processes.
+* The combined framework yields **reliable predictions with accurate uncertainty and physical consistency**.
+
+***
