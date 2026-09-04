@@ -1,0 +1,77 @@
+---
+layout: blog_post
+title: 'Reliable probabilistic prediction: Calibration → Uncertainty → Reliability'
+date: 2025-07-01
+tags:
+  - Drought Prediction
+  - Deep Learning
+  - Uncertainty Quantification
+  - Calibration
+---
+# 1.1 Motivations
+
+Traditional drought models, such as process-based and drought indices, often carry biasesand uncertainties stemming from mismatches between observational data and process assumptions, as well as from climate variability. 
+
+These efforts are crucial for applying these models in reliable drought predictions, where accounting for uncertainty can lead to improved decision-making and deeper insights into drought processes.
+
+# 1.2 Challenges
+
+Developing reliable predictive models requires overcoming several critical challenges regarding data and model confidence:
+* **Distributional Shifts**: Distributional shifts often cause overconfident model predictions. These shifts primarily manifest in two ways:
+    1. *Label-prior shift*: Different drought prior distributions across various climate zones.
+    2. *Likelihood shift*: Discrepancies between training and validation subsets.
+* **Uncertainty Quantification**: Comprehensive uncertainty quantification is important for model robustness. Uncertainty stems from multiple sources, including data, latent representations, parameters, and procedures.
+
+<!-- > *Image placeholder for Climate Zones (referencing page 23):*
+> `![Climate Zones]({{ '/assets/images/climate_zones.png' | relative_url }} "Climate zones with drought annotations")` -->
+
+------
+
+# 1.3 Methodology: Calibration & Uncertainty
+
+To address the challenges of overconfidence and distributional shifts, the study proposes a comprehensive framework:
+
+### Two-Step Calibration
+The framework utilizes bias corrections based on Bayes' theorem to calibrate functions, directly addressing both label-prior shifts and likelihood shifts. 
+
+### Entropy-based Uncertainty Quantification
+The total uncertainty is decomposed to better understand the model's behavior:
+* **Total Uncertainty**: Comprises model uncertainty ($\mathbb{I}$) and data uncertainty ($\mathbb{H}$).
+* **Model Uncertainty Decomposition**: It is further broken down into latent uncertainty ($z$), parameter uncertainty ($	heta$), and procedure uncertainty ($\delta$) using techniques like Monte Carlo dropout, random seeds, and different sampling methods.
+
+------
+
+# 1.4 Experimental Setup
+
+The experiments were set up with the following configurations:
+* **Dataset**: ERA5 (features), EM-DAT (labels), and Climate zones.
+* **Calibration Baselines**: Temperature scaling, Platt scaling, and Polynomial scaling.
+* **DL-based Predictions**: VLSTM, DK-VRN (from Study 1).
+* **Evaluation Metrics**: ROC-AUC, PR-AUC, Macro F1, Expected Calibration Error (ECE), and Root Mean Square Calibration Error (RMSCE).
+
+------
+
+# 1.5 Quantitative Results
+
+The proposed calibration method significantly reduced calibration errors compared to uncalibrated models and traditional scaling baselines.
+
+### Calibration Errors (%) for Different Algorithms
+
+| Metric | Uncalibrated | Temp Scaling | Platt Scaling | Poly Scaling | **Proposed** |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **ECE (↓)** | 4.06 | 3.64 | 0.40 | 0.35 | **0.31** |
+| **RMSCE (↓)** | 3.40 | 2.48 | 0.32 | 0.28 | **0.23** |
+
+*Table data sourced from the publication.*
+
+Furthermore, the uncertainty analysis demonstrated that deep learning models (like DK-VRN) could quantify different sources of uncertainty, ultimately guiding better decision-making under uncertain conditions (e.g., Accuracy-rejection curves for uncertain positive and negative samples).
+
+------
+
+# 1.6 Summary
+
+* The **calibration algorithm** successfully addresses distributional shifts.
+* The **entropy-based framework** effectively decomposes the total uncertainty into interpretable components.
+* Together, these methods significantly **improve the reliability of predictions** in deep learning-based drought detection.
+
+***
