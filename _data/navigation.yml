@@ -6,7 +6,7 @@ pages:
 # - name: Home (Layout 2)
 #   url: /index_layout2
 - name: Projects
-  url: /blog
+  url: /projects
 - name: Collaborations
   url: /collaborations  
 - name: Publications
