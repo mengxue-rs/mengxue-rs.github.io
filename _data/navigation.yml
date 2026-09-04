@@ -12,8 +12,4 @@ pages:
 - name: Publications
   url: /publications
 - name: Talks
-  url: /showcase
-# - name: Footprint
-#   url: /blog
-# - name: Showcase
-#   url: /showcase
+  url: /talks
