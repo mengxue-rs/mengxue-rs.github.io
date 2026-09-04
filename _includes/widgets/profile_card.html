@@ -5,7 +5,6 @@
                 <div class="row">
                     <div class="col">
                         {% if site.data.profile.portrait_url %}
-                        <!-- When the screen is wider than md, float the portrait on the right -->
                         <div class="figure float-right ml-4 mb-4 d-none d-md-block">
                             <img 
                                 src="{{ site.data.profile.portrait_url | relative_url }}" 
@@ -40,8 +39,19 @@
                         <div class="text-profile-bio mt-3" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
                             {{ site.data.profile.short_bio }}
                         </div>
-                        {% if site.data.profile.cv_link %}
-                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
+
+                        {% if site.data.profile.cv_link or site.data.profile.business_card_link %}
+                        <div class="mt-2">
+                            {% if site.data.profile.cv_link %}
+                                <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a>
+                            {% endif %}
+                            {% if site.data.profile.cv_link and site.data.profile.business_card_link %}
+                                &nbsp;&nbsp;|&nbsp;&nbsp;
+                            {% endif %}
+                            {% if site.data.profile.business_card_link %}
+                                <a target="_blank" href="{{ site.data.profile.business_card_link | relative_url }}"><i class="fas fa-address-card"></i> Business Card</a>
+                            {% endif %}
+                        </div>
                         {% endif %}
                     </div>
         
