@@ -1,13 +1,13 @@
 <footer class="footer border-top py-2 mt-5 bg-white small">
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
-        <div class="d-flex align-items-center justify-content-between my-3">
-            <div class="text-muted">
+        <div class="text-muted d-flex align-items-center justify-content-between my-3">
+            <span>
                 <i>Last updated: {{ "now" | date: "%b %Y" }}</i>
-            </div>
-            <div class="text-muted text-end">
+            </span>
+            <span class="text-end">
                 {{ site.data.display.footer_text }}<br>
                 &copy; 2026 Mengxue Zhang
-            </div>
+            </span>
         </div>
     </div>
 </footer>
