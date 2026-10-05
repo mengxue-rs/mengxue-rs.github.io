@@ -3,8 +3,8 @@ secondary_name: ""
 navbar_name: "Mengxue Zhang" # Mengxue Zhang (mx.zhang.rs@gmail.com)
 
 positions:
-- name: '<span class="en">Ph.D. Researcher</span><span class="zh">博士研究员</span>'
-- name: '<span class="en">Universitat de València, Image Processing Laboratory, Spain</span><span class="zh">西班牙瓦伦西亚大学 图像处理实验室</span>'
+- name: Ph.D. Researcher
+- name: Universitat de València,  Image Processing Laboratory,  Spain
   logo: /assets/images/badges/UV_logo.jpg  # Logo is optional
 
 
@@ -23,7 +23,6 @@ orcid: 0000-0002-8587-4334
 
 short_bio_text_justify: false
 short_bio: >-
-  <div class="en">
   <p>
    <b>Hi there, I'm Mengxue Zhang.</b>
   </p>
@@ -35,58 +34,44 @@ short_bio: >-
   <p>
     My future research aims to develop <b>uncertainty-aware hybrid Earth-system models</b> for robust prediction of climate extremes under changing climate conditions.
   </p>
-  </div>
-  <div class="zh">
-  <p>
-   <b>你好，我是张梦雪。</b>
-  </p>
-  <p>
-    我是一名地球系统 AI 研究者，研究方向位于<b>物理感知深度学习、概率建模与不确定性量化</b>的交叉领域。我在<a href="https://www.uv.es/" target="_blank">瓦伦西亚大学</a>获得遥感科学与技术专业博士学位，导师为
-    <a href="https://www.uv.es/gcamps/" target="_blank">Gustau Camps-Valls 教授</a>和 <a href="https://www.tsc.uc3m.es/en/profile.php?uid=matorres" target="_blank">Miguel Ángel Fernández-Torres</a>，博士期间发展了面向干旱建模、具备不确定性感知能力的混合AI方法。我的研究将物理知识与概率推断融入深度学习，以提升<b>模型的泛化能力、预测可靠性与物理一致性</b>。
-  </p>
-  <p>
-    未来，我希望发展<b>具备不确定性感知的混合地球系统模型</b>，用于在气候变化背景下对极端气候事件进行稳健预测。
-  </p>
-  </div>
 
 portrait_url: /assets/images/photos/portrait.jpg
 # portrait_caption: >-
 #   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: '<span class="en">University of Valencia</span><span class="zh">瓦伦西亚大学</span>'
+- name: University of Valencia
   logo: /assets/images/badges/UV_logo.jpg
   position: >- 
-    <span class="en">Department of Earth Physics and Thermodynamics. <br/>
-    Ph.D. in Remote Sensing (Sobresaliente Cum Laude) </span><span class="zh">地球物理与热力学系 <br/>
-    遥感科学与技术专业博士（优秀）</span>
-  date: '<span class="en">Sep. 2021 - July 2026</span><span class="zh">2021年9月 - 2026年7月</span>'
-- name: '<span class="en">Hohai University</span><span class="zh">河海大学</span>'
+    Department of Earth Physics and Thermodynamics. <br/>
+    Ph.D. in Remote Sensing
+  date: Sep. 2021 - July 2026
+- name: Hohai University
   logo: /assets/images/badges/HHU_logo.jpg
-  position: '<span class="en">M.E. in Geographic Information Engineering (Excellent)</span><span class="zh">地理制图学与地理信息工程硕士（优秀）</span>'
-  date: '<span class="en">Sep. 2018 - Jul. 2021</span><span class="zh">2018年9月 - 2021年7月</span>'
-- name: '<span class="en">Hohai University</span><span class="zh">河海大学</span>'
+  position: M.E. in Geographic Information Engineering (Excellent)
+  date: Sep. 2018 - Jul. 2021
+- name: Hohai University
   logo: /assets/images/badges/HHU_logo.jpg
-  position: '<span class="en">B.S. in Geomatics Engineering (Excellent)</span><span class="zh">测绘科学与工程学士（优秀）</span>'
-  date: '<span class="en">Sep. 2014 - Jul. 2018</span><span class="zh">2014年9月 - 2018年7月</span>'
+  position: B.S. in Geomatics Engineering (Excellent)
+  date: Sep. 2014 - Jul. 2018
   
 
 experience:
-- name: '<span class="en">Hybrid Probabilistic Deep Learning for Drought Monitoring</span><span class="zh">面向干旱监测的混合概率深度学习</span>'
+- name: Hybrid Probabilistic Deep Learning for Drought Monitoring 
   logo: /assets/images/badges/UV_logo.jpg
-  position: '<span class="en">Ph.D. Researcher (Dissertation)</span><span class="zh">博士研究员（博士论文）</span>'
-  date: '<span class="en">Sep. 2021 - Jul. 2026</span><span class="zh">2021年9月 - 2026年7月</span>'
-- name: '<span class="en">EU Horizon 2020 Project XAIDA</span><span class="zh">欧盟地平线 2020 项目 XAIDA</span>'
+  position: Ph.D. Researcher (Dissertation)
+  date: Sep. 2021 - Jul. 2026
+- name: EU Horizon 2020 Project XAIDA
   logo: /assets/images/badges/XAIDA_logo.png
-  position: '<span class="en">Contributors (D3.2 & D3.4)</span><span class="zh">贡献者（D3.2 与 D3.4）</span>'
-  date: '<span class="en">Sep. 2022 - Jul. 2025</span><span class="zh">2022年9月 - 2025年7月</span>'
+  position: Contributors (D3.2 & D3.4)
+  date: Sep. 2022 - Jul. 2025
 
 awards:
-- name: '<span class="en">CSC Scholarship — Competitive Doctoral Fellowship</span><span class="zh">国家留学基金委（CSC）奖学金——博士竞争性资助</span>'
+- name: CSC Scholarship — Competitive Doctoral Fellowship
   date: 2022 - 2026
-- name: '<span class="en">Conference Travel Grant, ELSA Mobility</span><span class="zh">ELSA Mobility 会议差旅资助</span>'
-  date: '<span class="en">Sep. 2025</span><span class="zh">2025年9月</span>'
-- name: '<span class="en">Academic Excellence Scholarship, Hohai University</span><span class="zh">河海大学学业优秀奖学金</span>'
+- name: Conference Travel Grant, ELSA Mobility
+  date: Sep. 2025
+- name: Academic Excellence Scholarship, Hohai University
   date: 2018
-- name: '<span class="en">Chinese National Scholarship, Hohai University</span><span class="zh">国家奖学金（河海大学）</span>'
+- name: Chinese National Scholarship, Hohai University
   date: 2015
