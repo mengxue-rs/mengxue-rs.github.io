@@ -57,30 +57,47 @@ portrait_url: /assets/images/photos/portrait.jpg
 
 education:
 - name: University of Valencia
+  name_zh: 瓦伦西亚大学
   logo: /assets/images/badges/UV_logo.jpg
   position: >- 
     Department of Earth Physics and Thermodynamics. <br/>
     Ph.D. in Remote Sensing
+  position_zh: >-
+    地球物理与热力学系 <br/>
+    遥感科学与技术专业博士
   date: Sep. 2021 - July 2026
+  date_zh: 2021年9月 - 2026年7月
 - name: Hohai University
+  name_zh: 河海大学
   logo: /assets/images/badges/HHU_logo.jpg
   position: M.E. in Geographic Information Engineering (Excellent)
+  position_zh: 地理制图学与地理信息工程硕士（优秀）
   date: Sep. 2018 - Jul. 2021
+  date_zh: 2018年9月 - 2021年7月
 - name: Hohai University
+  name_zh: 河海大学
   logo: /assets/images/badges/HHU_logo.jpg
   position: B.S. in Geomatics Engineering (Excellent)
+  position_zh: 测绘科学与工程学士（优秀）
   date: Sep. 2014 - Jul. 2018
-  
+  date_zh: 2014年9月 - 2018年7月
+
 
 experience:
 - name: Hybrid Probabilistic Deep Learning for Drought Monitoring 
+  name_zh: 面向干旱监测的混合概率深度学习
   logo: /assets/images/badges/UV_logo.jpg
   position: Ph.D. Researcher (Dissertation)
+  position_zh: 博士研究员（博士论文）
   date: Sep. 2021 - Jul. 2026
+  date_zh: 2021年9月 - 2026年7月
 - name: EU Horizon 2020 Project XAIDA
+  name_zh: 欧盟地平线 2020 项目 XAIDA
   logo: /assets/images/badges/XAIDA_logo.png
   position: Contributors (D3.2 & D3.4)
+  position_zh: 贡献者（D3.2 与 D3.4）
   date: Sep. 2022 - Jul. 2025
+  date_zh: 2022年9月 - 2025年7月
 
 awards:
 - name: '<span class="en">CSC Scholarship — Competitive Doctoral Fellowship</span><span class="zh">国家留学基金委（CSC）博士奖学金</span>'
