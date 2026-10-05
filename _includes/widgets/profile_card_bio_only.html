@@ -5,7 +5,7 @@
             <div class="card-body p-4">
                 <div class="row px-3 pt-3">
                     <div class="col h3">
-                        About Me 🌍
+                        <span class="en">About Me 🌍</span><span class="zh">关于我 🌍</span>
                     </div>
                 </div>
                 <div class="row p-3">
@@ -16,25 +16,25 @@
                         {% if site.data.profile.cv_link or site.data.profile.business_card_link %}
                         <div class="mt-2">
                             {% if site.data.profile.cv_link %}
-                                <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a>
+                                <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> <span class="en">Curriculum Vitae</span><span class="zh">个人简历</span></a>
                             {% endif %}
                             {% if site.data.profile.cv_link and site.data.profile.business_card_link %}
                                 &nbsp;&nbsp;|&nbsp;&nbsp;
                             {% endif %}
                             {% if site.data.profile.business_card_link %}
-                                <a target="_blank" href="{{ site.data.profile.business_card_link | relative_url }}"><i class="fas fa-address-card"></i> Business Card</a>
+                                <a target="_blank" href="{{ site.data.profile.business_card_link | relative_url }}"><i class="fas fa-address-card"></i> <span class="en">Business Card</span><span class="zh">学术名片</span></a>
                             {% endif %}
                             {% if site.data.profile.business_card_link and site.data.profile.wechat_link %}
                                 &nbsp;&nbsp;|&nbsp;&nbsp;
                             {% endif %}
                             {% if site.data.profile.wechat_link %}
-                                <a target="_blank" href="{{ site.data.profile.wechat_link | relative_url }}"><i class="fas fa-address-card"></i> Wechat Card</a>
-                            {% endif %}                            
+                                <a target="_blank" href="{{ site.data.profile.wechat_link | relative_url }}"><i class="fas fa-address-card"></i> <span class="en">Wechat Card</span><span class="zh">微信名片</span></a>
+                            {% endif %}
                         </div>
                         {% endif %}
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </div>
 </div>
