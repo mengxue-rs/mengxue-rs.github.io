@@ -4,7 +4,7 @@ navbar_name: "Mengxue Zhang" # Mengxue Zhang (mx.zhang.rs@gmail.com)
 
 positions:
 - name: '<span class="en">Ph.D. Researcher</span><span class="zh">博士研究员</span>'
-- name: '<span class="en">Universitat de València, Image Processing Laboratory, Spain</span><span class="zh">西班牙, 瓦伦西亚大学, 图像处理实验室</span>'
+- name: '<span class="en">Universitat de València, Image Processing Laboratory, Spain</span><span class="zh">瓦伦西亚大学<br/>图像处理实验室，西班牙</span>'
   logo: /assets/images/badges/UV_logo.jpg  # Logo is optional
 
 
