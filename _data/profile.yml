@@ -83,11 +83,11 @@ experience:
   date: Sep. 2022 - Jul. 2025
 
 awards:
-- name: CSC Scholarship — Competitive Doctoral Fellowship
+- name: '<span class="en">CSC Scholarship — Competitive Doctoral Fellowship</span><span class="zh">国家留学基金委（CSC）博士奖学金</span>'
   date: 2022 - 2026
-- name: Conference Travel Grant, ELSA Mobility
-  date: Sep. 2025
-- name: Academic Excellence Scholarship, Hohai University
+- name: '<span class="en">Conference Travel Grant, ELSA Mobility</span><span class="zh">ELSA Mobility 会议差旅资助</span>'
+  date: '<span class="en">Sep. 2025</span><span class="zh">2025年9月</span>'
+- name: '<span class="en">Academic Excellence Scholarship, Hohai University</span><span class="zh">河海大学学业优秀奖学金</span>'
   date: 2018
-- name: Chinese National Scholarship, Hohai University
+- name: '<span class="en">Chinese National Scholarship, Hohai University</span><span class="zh">国家奖学金（河海大学）</span>'
   date: 2015
