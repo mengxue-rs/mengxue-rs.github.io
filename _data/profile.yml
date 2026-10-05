@@ -1,6 +1,8 @@
 primary_name: "Mengxue Zhang"
+primary_name_zh: "张梦雪"
 secondary_name: ""
 navbar_name: "Mengxue Zhang" # Mengxue Zhang (mx.zhang.rs@gmail.com)
+navbar_name_zh: "张梦雪"
 
 positions:
 - name: '<span class="en">Ph.D. Researcher</span><span class="zh">博士研究员</span>'
