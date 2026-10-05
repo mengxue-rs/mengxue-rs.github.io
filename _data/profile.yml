@@ -3,7 +3,7 @@ secondary_name: ""
 navbar_name: "Mengxue Zhang" # Mengxue Zhang (mx.zhang.rs@gmail.com)
 
 positions:
-- name: Ph.D. Researcher
+- name: '<span class="en">Ph.D. Researcher</span><span class="zh">博士研究员</span>'
 - name: Universitat de València,  Image Processing Laboratory,  Spain
   logo: /assets/images/badges/UV_logo.jpg  # Logo is optional
 
@@ -23,6 +23,7 @@ orcid: 0000-0002-8587-4334
 
 short_bio_text_justify: false
 short_bio: >-
+  <div class="en">
   <p>
    <b>Hi there, I'm Mengxue Zhang.</b>
   </p>
@@ -34,6 +35,19 @@ short_bio: >-
   <p>
     My future research aims to develop <b>uncertainty-aware hybrid Earth-system models</b> for robust prediction of climate extremes under changing climate conditions.
   </p>
+  </div>
+  <div class="zh">
+  <p>
+   <b>你好，我是张梦雪。</b>
+  </p>
+  <p>
+    我是一名地球系统 AI 研究者，研究方向位于<b>物理感知深度学习、概率建模与不确定性量化</b>的交叉领域。我在<a href="https://www.uv.es/" target="_blank">瓦伦西亚大学</a>获得遥感科学与技术专业博士学位，导师为
+    <a href="https://www.uv.es/gcamps/" target="_blank">Gustau Camps-Valls 教授</a>和 <a href="https://www.tsc.uc3m.es/en/profile.php?uid=matorres" target="_blank">Miguel Ángel Fernández-Torres</a>，博士期间发展了面向干旱建模、具备不确定性感知能力的混合AI方法。我的研究将物理知识与概率推断融入深度学习，以提升<b>模型的泛化能力、预测可靠性与物理一致性</b>。
+  </p>
+  <p>
+    未来，我希望发展<b>具备不确定性感知的混合地球系统模型</b>，用于在气候变化背景下对极端气候事件进行稳健预测。
+  </p>
+  </div>
 
 portrait_url: /assets/images/photos/portrait.jpg
 # portrait_caption: >-
