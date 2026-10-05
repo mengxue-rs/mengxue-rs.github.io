@@ -16,9 +16,15 @@
                         {% if site.data.profile.cv_link or site.data.profile.business_card_link %}
                         <div class="mt-2">
                             {% if site.data.profile.cv_link %}
-                                <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> <span class="en">Curriculum Vitae</span><span class="zh">个人简历</span></a>
+                                <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> <span class="en">Curriculum Vitae</span><span class="zh">个人简历 (英文版)</span></a>
                             {% endif %}
-                            {% if site.data.profile.cv_link and site.data.profile.business_card_link %}
+                            {% if site.data.profile.cv_link and site.data.profile.cv_link_cn %}
+                                &nbsp;&nbsp;|&nbsp;&nbsp;
+                            {% endif %}
+                            {% if site.data.profile.cv_link_cn %}
+                                <a target="_blank" href="{{ site.data.profile.cv_link_cn | relative_url }}"><i class="fas fa-file-alt"></i> <span class="en">Chinese CV</span><span class="zh">个人简历 (中文版)</span></a>
+                            {% endif %}
+                            {% if site.data.profile.cv_link_cn and site.data.profile.business_card_link %}
                                 &nbsp;&nbsp;|&nbsp;&nbsp;
                             {% endif %}
                             {% if site.data.profile.business_card_link %}
