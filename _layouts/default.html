@@ -22,9 +22,14 @@
     </style>
     <script>
         (function () {
+            var forced = '{{ page.force_lang }}';
             var l = null;
             try { l = localStorage.getItem('lang'); } catch (e) {}
-            if (!l) l = (navigator.language || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+            if (forced) {
+                l = forced;
+                try { localStorage.setItem('lang', forced); } catch (e) {}
+            }
+            if (!l) l = 'en';
             document.documentElement.lang = l;
         })();
     </script>
